@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>InsurTix | Member Dashboard</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body style="height:100%;">
+ 
+    <div class="header">
+            <nav class="navbar navbar-light bg-light" style="background-color:#0099ff">
+              <a class="navbar-brand" href="showUserInfo">InsurTix | Member Dashboard</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li role="nav-item active" ><a class="nav-link" href="showUser">Dashboard</a></li>
+                  <li role="nav-item"><a class="nav-link" href="showSignIn">Account Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="showSignUp">Logout</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    
+        <div class="jumbotron" style="text-align:center;align-content: center;">
+            <h2>Account Info</h2>
+            <p class="lead"></p>
+            <p>Name: {user_name}</p>
+            <p>Email: {user_email}</p>
+            <p>Address: 123 Some St, Columbia, SC, 20201 | Update Info(not implemented yet)</p>
+            <p>Active Tickets: 1</p>
+            <p>Change Password (not implemented yet) </p>
+            <p><a class="btn btn-md btn-success" href="showUserInfo" role="button">Return to Dashboard</a>
+        </div>
+
+        <footer class="footer">
+                <p>&copy; Company 2015</p>
+        </footer>
+    </div>
+</body>
+ 
+</html>

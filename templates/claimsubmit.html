@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>InsurTix | Member Dashboard</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+    <script>
+      function redirect(thisUrl) {
+        window.location = thisUrl;
+      }
+
+      function snackbar(thisUrl) {
+        // Get the snackbar DIV
+        var x = document.getElementById("snackbar")
+
+        // Add the "show" class to DIV
+        x.className = "show";
+
+        // After 3 seconds, remove the show class from DIV
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+        redirect(thisUrl);
+      } 
+    </script>
+    <link href="../static/snackbar.css" rel="stylesheet">
+</head>
+ 
+<body>
+ 
+    <div class="header">
+            <nav class="navbar navbar-light bg-light" style="background-color:#0099ff">
+              <a class="navbar-brand" href="showUserInfo">InsurTix | Member Dashboard</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li role="nav-item active" ><a class="nav-link" href="showUser">Dashboard</a></li>
+                  <li role="nav-item"><a class="nav-link" href="showSignIn">Account Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="showSignUp">Logout</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    
+        <div class="jumbotron" style="text-align:center;align-content: center;">
+            <h2>Submit a Claim</h2>
+            <p>Please enter you ticket information below to submit a claim</p>
+            <p>This feature not implemented yet</p>
+            <form>
+              <div class="col-md-2"></div>
+              <div class="col">
+              <div class="form-group" style="align-content: center; text-align: center;">
+                <label for="exampleInputEmail1">Date</label>
+                <input type="Date of Ticket" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Date of Ticket">
+                <!--<small id="emailHelp" class="form-text text-muted"></small>-->
+              </div>
+              <div class="form-group">
+                <label for="exampleInput">Ticket ID</label>
+                <input type="TicketID" class="form-control" id="exampleInputPassword1" placeholder="###">
+              </div>
+              <div class="form-group">
+                <label for="exampleInput">Ticket Cost</label>
+                <input type="TicketID" class="form-control" id="exampleInputPassword1" placeholder="$$$">
+              </div>
+              <div class="form-group">
+                <label for="exampleInput">Address</label>
+                <input type="TicketID" class="form-control" id="exampleInputPassword1" placeholder="Address Here">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Image of Ticket</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check Here</label>
+              </div>
+              <button type="button" class="btn btn-primary" onclick="snackbar('showUserInfo')">Submit Claim</button>
+            </div>
+            <div class="col-md-2"></div>
+            </form>
+        </div>
+
+        <div style="align-content: center;text-align: center;" id="snackbar">Claim Successful</div> 
+
+        <footer class="footer">
+                <p>&copy; Company 2015</p>
+        </footer>
+    </div>
+</body>
+ 
+</html>

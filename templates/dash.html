@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <title>InsurTix | Member Dashboard</title>
+ 
+ 
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+    <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+ 
+ 
+</head>
+ 
+<body style="height:100%;">
+ 
+    <div class="header">
+            <nav class="navbar navbar-light bg-light" style="background-color:#0099ff">
+              <a class="navbar-brand" href="showUserInfo">InsurTix | Member Dashboard</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li role="nav-item active" ><a class="nav-link" href="showUser">Dashboard</a></li>
+                  <li role="nav-item"><a class="nav-link" href="showSignIn">Account Info</a></li>
+                  <li class="nav-item"><a class="nav-link" href="showSignUp">Logout</a></li>
+                </ul>
+              </div>
+            </nav>
+        </div>
+    
+        <div class="jumbotron" style="text-align:center;align-content: center;">
+            <h2>Welcome {user_name}</h2>
+            <p class="lead"></p>
+            <p><a class="btn btn-md btn-success" href="submitClaim" role="button">Submit a Claim</a></p>
+            <p><a class="btn btn-md btn-success" href="showBilling" role="button">View/Pay Bill</a></p>
+            <p><a class="btn btn-md btn-success" href="showAccountInfo" role="button">Account Info</a>
+            <p><a class="btn btn-md btn-success" href="/" role="button">Logout</a>
+        </div>
+
+        <footer class="footer">
+                <p>&copy; Company 2015</p>
+        </footer>
+    </div>
+</body>
+ 
+</html>
